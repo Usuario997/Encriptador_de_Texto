@@ -1,0 +1,330 @@
+body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F3F5FC;
+}
+
+.logo{
+    margin: 40px 40px;
+}
+
+#text-in ::placeholder{
+    color: #0A3871;
+    font-family: 'Inter';
+}
+
+#text-in textarea{
+    position: absolute;
+    background: #F3F5FC;
+    width: 577px;
+    height: auto; /* figma dice 48px */
+    left: 240px;
+    top: 168px;
+    border: 0;
+    resize: none;
+    outline: none;
+    font-family: 'Inter';
+    font-style:normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+
+}
+
+.aviso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 240px;
+    top: 851px;
+}
+
+#botones{
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;    
+}
+
+.encriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background: #0A3871;
+    margin-left: 0px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.encriptar :hover {
+    font-size: 30px;
+    transition: 0.3s;    
+}
+
+.desencriptar{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background: #D8DFE8;
+    margin-left:20px;
+    border: 1px solid #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center; 
+    color:#0A3871  
+}
+
+.desencriptar :hover {
+    font-size: 30px;
+    transition: 0.3s;
+
+}
+
+#rectangulo{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.muñeco{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 1032px;
+    top: 283px;
+}
+
+.frame5{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 1032px;
+    top: 619px;
+}
+
+#resultado{    
+    position: absolute;
+    width: 336px;
+    height: auto;
+    left: 32px;
+    top: 72px;
+    resize: none;
+    outline: none;
+    border: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+}
+
+.copiar{
+    position: absolute;
+    width: 328px;
+    height: 67px;
+    top: 845px;
+    border-radius: 24px;
+    background: white;
+    margin-left: 36px;
+    border: 1px solid #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center; 
+    color:#0A3871  
+}
+
+.copiar :hover {
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.autor{
+    font-family: 'Inter';
+    font-style: normal;
+    color: #808184;
+    font-size: 12px;
+    position: absolute;
+    top: 1000px;
+    left:510px    
+}
+
+@media screen and (max-width:750px){
+    body {
+        position: absolute;
+        width: auto;
+        height: auto;
+        background: #F3F5FC;
+    }
+
+    .logo{
+        margin-top: 40px;
+    }
+    
+    #text-in ::placeholder{  
+        color: #0A3871;
+        font-family: 'Inter';
+    }
+    
+    #text-in textarea{
+        position: absolute;
+        margin-left: 0px;
+        background: #F3F5FC;
+        width: 600px;
+        height: 350px; 
+        left: 40px;
+        top: 240px;
+        border: 0;
+        resize: none;
+        outline: none;
+        font-family: 'Inter';
+        font-style:normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: #0A3871;
+    }
+    
+    .aviso{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 40px;
+        gap: 8px;
+        position: absolute;
+        width: 229px;
+        height: 18px;
+        left: 0px;
+        top: 750px;
+    }
+    
+    #botones{
+        position: absolute;
+        width: 628px;
+        height: 67px;
+        left: 10px;
+        top: 784PX;  
+    }
+    
+    .encriptar{
+        display: inline;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        width: 302px;
+        height: 67px;
+        color: #FFFFFF;
+        background: #0A3871;
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    
+    .desencriptar{
+        display: inline;
+        flex-direction: row;
+        margin-left: 17px;
+        align-items: flex-start;
+        width: 302px;
+        height: 67px;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    
+    #rectangulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px;
+        gap: 32px;
+        position: absolute;
+        width: 545px;
+        height: 343px;
+        left: 20px;
+        top: 880px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+    
+    #inicio{
+        display: none;
+    }
+    
+    #resultado{
+        margin-left: 0px;
+        width: 545px;
+        height: 200px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        color: #495057;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    
+    .copiar{
+        position: static;
+        box-sizing: border-box;
+        margin-left: 5px;
+        margin-top: 270px;
+        width: 540px;
+        height: 67px;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    
+    .autor{
+        width: 180px;
+        font-family: 'Inter';
+        font-style: normal;
+        color: #808184;
+        font-size: 12px;
+        position: absolute;
+        top: 1314px;
+        left: 30px;   
+        padding: 0 0 7px;
+    }
+    
+    
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css/reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="imagenes/Logo.svg">
+    </header>
+
+    <main>
+        <section>
+            <form id="text-in">
+                <textarea type="texto" id="texto_ingresado" name="texto_ingresado" rows="10"
+                    placeholder="Ingrese el texto aqui" form="text-in" required></textarea>
+            </form>
+            <div class="aviso">
+                <img src="imagenes/Vector.svg" alt="simbolo-admiracion">
+                <img src="imagenes/Solo letras minúsculas y sin acentos.svg" alt="aviso tipo de texto a ingresar">
+            </div>
+            <div id="botones">
+                <button class="encriptar" type="button" onclick="codificar();ocultar_inicio();"><p>Encriptar</p></button>
+                <button class="desencriptar" type="button" onclick="decodificar();ocultar_inicio();"><p>Desencriptar</p></button>
+            </div>
+
+        </section>
+
+        <section id="rectangulo">
+            <textarea type="texto" id="resultado" name="resultado" rows="15"></textarea>
+            <button class="copiar" type="button" onclick="copiar()"><p>Copiar</p></button>
+        </section>
+
+        <div id="inicio">
+            <img id="rectangulo" src="imagenes/Rectangle 1.svg" alt="contenedor de muñeco y mensaje">
+            <img class="muñeco" src="imagenes/Muñeco.svg">
+            <img class="frame5" src="imagenes/Frame 5.svg" alt="mensaje no encontrado">
+        </div>
+    </main>
+<script src="Codigo_encriptador.js"></script>
+</body>
+
+<footer>
+    <p class=autor>&#9821;Desarrollador: Carlos F. Oyola V.</p>
+</footer>
+
+</html>
